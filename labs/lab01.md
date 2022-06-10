@@ -35,7 +35,7 @@ References:
         id: hello
       # This step prints an output (time) from the previous step's action.
       - name: Echo the greeting's time
-        run: echo 'The time was ${{ steps.hello.outputs.time }}.'   
+        run: echo 'The time was ${{ steps.hello.outputs.time }}.'
 ```
 3. Optional remove the `paths` to trigger the workflow on any push to main branch
 4. Commit the changes into the `main` branch 
